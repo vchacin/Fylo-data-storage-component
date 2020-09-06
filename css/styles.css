@@ -1,0 +1,242 @@
+.main{
+  font-size: 14px;
+  font-family: raleway;
+  height: 400px;
+  background-color: hsl(229, 57%, 11%);
+  text-align: center;
+  padding: 165px 100px 0 100px;
+}
+
+
+.icon{
+  background-color: hsl(229, 57%, 11%);
+  padding: 12px;
+  border-radius: 20%;
+  height: 20px;
+  width: 22px;
+  margin: 30px 10px 0 0px;
+}
+
+.information{
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px 100px 10px 10px;
+  width: 25%;
+  padding: 40px;
+  z-index: 1;
+  box-shadow: 0px 25px 43px -1px rgba(0, 0, 0, 0.25);
+}
+
+.description{
+  display: inline-block;
+  position: relative;
+  color: white;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  text-align: left;
+  width: 30%;
+  padding: 40px 40px 25px 40px;
+  margin: 30px 30px 25px 25px;
+  z-index: 1;
+  box-shadow: 0px 25px 43px -1px rgba(0, 0, 0, 0.25);
+}
+
+.speech-bubble {
+  width: 150px;
+  height: 40px;
+  padding: 15px 30px 30px 15px;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  left: 64%;
+  top: -270px;
+	background: #ffffff;
+	border-radius: .9em;
+  color: #B7B6BB;
+  z-index: 1;
+}
+
+.box{
+  font-weight: 700;
+  font-size: 2.7rem;
+  padding: 10px;
+  color: hsl(229, 57%, 11%);
+}
+
+.speech-bubble:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid #ffffff;
+  border-top: 20px solid #ffffff;
+  border-bottom: 20px solid transparent;
+  right: 0;
+  bottom: -21px;
+}
+
+.slidecontainer {
+  width: 100%;
+  height: 20px;
+  position: relative;
+  top: 20px;
+  border-radius: 10px;
+  background: rgb(21,30,73);
+  outline: none; /* Remove outline */
+  opacity: 1;
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  z-index: 1;
+}
+
+.slider {
+  width: 71%; /* Full-width */
+  height: 14px;
+  position: relative;
+  top: 3px;
+  left: 4px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  outline: none; /* Remove outline */
+  z-index: 2;
+}
+
+.slider-dot {
+  position: relative;
+  top: -9px;
+  left: 68%;
+  width: 10px; /* Set a specific slider handle width */
+  height: 10px; /* Slider handle height */
+  border-radius: 50%;
+  background: #ffffff; /* Green background */
+  z-index: 3;
+}
+
+.gb{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.attribution{
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  margin: 40px;
+  font-size: 11px;
+  text-align: center;
+  z-index: 1;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.background{
+  width: 100%;
+  left: 0;
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+}
+
+@media screen and (max-width: 700px) {
+
+  .main{
+    padding: 90px 10px 90px 10px;
+    margin: 10px;
+  }
+
+  .information{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 100px 10px 10px;
+    width: 70%;
+    padding: 40px;
+    z-index: 1;
+    }
+
+  .description{
+    margin: 15px 0 0 0 !important;
+    width: 70%;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .speech-bubble {
+    width: 150px;
+    height: 40px;
+    padding: 15px 30px 30px 15px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    left: 30%;
+    top: -10%;
+  	background: #ffffff;
+  	border-radius: .9em;
+    color: #B7B6BB;
+    z-index: 1;
+  }
+
+  .speech-bubble:before {
+    display: none;
+  }
+
+  .slidecontainer {
+    width: 100%;
+    height: 20px;
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+    background: rgb(21,30,73);
+    outline: none; /* Remove outline */
+    opacity: 1;
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    z-index: 1;
+  }
+
+  .slider {
+    width: 71%; /* Full-width */
+    height: 14px;
+    position: relative;
+    top: 3px;
+    left: 4px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    outline: none; /* Remove outline */
+    z-index: 2;
+  }
+
+  .slider-dot {
+    position: relative;
+    top: -9px;
+    left: 68%;
+    width: 10px; /* Set a specific slider handle width */
+    height: 10px; /* Slider handle height */
+    border-radius: 50%;
+    background: #ffffff; /* Green background */
+    z-index: 3;
+  }
+
+  .attribution{
+    display: inline-block;
+    position: relative;
+    top: 90%;
+    margin: 40px;
+    font-size: 11px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .background{
+    height: 100%;
+    left: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
+  }
+}
